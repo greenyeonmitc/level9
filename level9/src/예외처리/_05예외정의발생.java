@@ -17,6 +17,7 @@ public class _05예외정의발생 {
 
 		try {
 			int idx = 5;
+			System.out.println("idx = " + idx);
 			int[] arr = new int[5];
 			
 			if(idx >= arr.length || idx < 0) {
@@ -25,8 +26,10 @@ public class _05예외정의발생 {
 			System.out.println(arr[idx]);
 			
 		}catch(Exception e) {
+
 			e.printStackTrace();
 		}
+		System.out.println("프로그램 종료");
 
 	}
 
